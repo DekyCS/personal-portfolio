@@ -51,10 +51,10 @@ function App() {
       <div className='flex flex-col max-w-3xl mx-auto p-8 text-lg'>
         <nav className='flex items-center justify-between'>
           <div className='flex gap-8'>
-            <a className="opacity-50 hover:opacity-100" href="/">home</a>
-            <a href="/">projects</a>
-            <a href="/">blog</a>
-            <a href="/">contact</a>
+            <a className="opacity-60 hover:opacity-90" href="/">home</a>
+            <a className="opacity-60 hover:opacity-90" href="/">projects</a>
+            <a className="opacity-60 hover:opacity-90" href="/">blog</a>
+            <a className="opacity-60 hover:opacity-90" href="/">contact</a>
           </div>
 
           <ThemeButton />
