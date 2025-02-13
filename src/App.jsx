@@ -1,15 +1,18 @@
 import './App.css'
-import { Button } from './components/ui/button'
+import { Button } from '@/components/ui/button'
 import { AspectRatio } from "@/components/ui/aspect-ratio"
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs"
 import IconButton from './components/icon-button'
 import PlaceInfo from './components/place-info'
 import SectionTitle from './components/section-title'
+import ProjectCard from './components/project-card'
 import { Card } from "@/components/ui/card"
 import { FileDown, Mail, Github, Linkedin, Moon } from 'lucide-react';
 import face from './assets/face.jpeg'
+import planit from './assets/planit.png'
 import { ThemeProvider } from './components/theme-provider'
 import { ThemeButton } from './components/theme-button'
+import { Badge } from "@/components/ui/badge"
 
 const jobs = [
   {
@@ -36,7 +39,6 @@ const educations = [
 
 const featuredProjects = [
   {
-    "imageSource": "https://tedawf.com/_next/image?url=%2Ftv-tele-alerts.png&w=640&q=75",
     "title": "Tradingview Telegram Alerts",
     "description": "Real-time trading alerts with chart snapshots sent to Telegram, designed to keep traders informed and responsive to market changes",
     "tags": ["Docker", "FastAPI", "Fly.io", "Python", "Selenium", "Telegram Bot API"],
@@ -48,18 +50,26 @@ function App() {
 
   return (
     <ThemeProvider defaultTheme="light">
-      <div className='flex flex-col max-w-3xl mx-auto p-8 text-lg'>
-        <nav className='flex items-center justify-between'>
-          <div className='flex gap-8'>
-            <a className="opacity-60 hover:opacity-90" href="/">home</a>
-            <a className="opacity-60 hover:opacity-90" href="/">projects</a>
-            <a className="opacity-60 hover:opacity-90" href="/">blog</a>
-            <a className="opacity-60 hover:opacity-90" href="/">contact</a>
-          </div>
+      <div className='flex flex-col max-w-3xl mx-auto text-lg px-8'>
 
-          <ThemeButton />
+        {/* Navbar */}
+
+        <nav className='sticky top-0 bg-white/75 dark:bg-[#0a0a0a]/70 backdrop-blur-md z-50'>
+          <div className='flex items-center justify-between py-6'>
+            <div className='flex gap-8 max-sm:gap-4'>
+              <a className="opacity-60 hover:opacity-90" href="/">home</a>
+              <a className="opacity-60 hover:opacity-90" href="/">projects</a>
+              <a className="opacity-60 hover:opacity-90" href="/">blog</a>
+              <a className="opacity-60 hover:opacity-90" href="/">contact</a>
+            </div>
+
+            <ThemeButton />
+          </div>
         </nav>
-        <div className='flex flex-row items-center justify-between gap-12 pt-12'>
+
+        {/* Heading */}
+
+        <div className='flex flex-row items-center justify-between gap-12 pt-12 max-md:flex-col-reverse max-md:items-start'>
           <div className='flex flex-col gap-2'>
             <h1 className='text-5xl calistoga-regular pb-4'>hi omar here 👋</h1>
             <p className='font-light'>19-year-old computer science student from Montreal 🇨🇦</p>
@@ -101,12 +111,28 @@ function App() {
           </TabsContent>
         </Tabs>
         </div>
+
+        {/* Featured Projects */}
+
         <div className='pt-18'>
           <SectionTitle title="featured projects" link="https://youtube.com" />
+          
+          <div className='flex flex-row gap-x-4 justify-between max-sm:flex-col gap-y-4'>
+            <ProjectCard image={planit} project={featuredProjects[0]} />
+
+            <ProjectCard image={planit} project={featuredProjects[0]} />
+          </div>
+          
         </div>
+
+        {/* Featued Awards */}
+
         <div className='pt-18'>
           <SectionTitle title="featured awards" />
         </div>
+
+        {/* Recent Posts */}
+
         <div className='pt-18'>
           <SectionTitle title="recent posts" link="https://youtube.com" />
         </div>
