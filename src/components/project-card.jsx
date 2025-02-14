@@ -11,13 +11,13 @@ import { Badge } from "@/components/ui/badge"
 import { Button } from '@/components/ui/button'
 import { Github } from 'lucide-react';
 
-export default function ProjectCard({ image, project }) {
+export default function ProjectCard({ project }) {
     return (
         <Card className='w-full'>
             <CardHeader>
                 <AspectRatio ratio={16/9}>
                     <img 
-                    src={image}
+                    src={project.image}
                     alt={project.title}
                     className='rounded-sm object-cover w-full h-full'/>
                 </AspectRatio>
@@ -26,7 +26,7 @@ export default function ProjectCard({ image, project }) {
             </CardHeader>
             <CardContent>
                 <div className="flex flex-wrap gap-1">
-                    {project.tags.map((tag, index) => (
+                    {project.tags.map((tag) => (
                     <Badge variant="secondary">{tag}</Badge>
                     ))}
                 </div>
