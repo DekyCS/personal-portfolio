@@ -8,13 +8,19 @@ import SectionTitle from '@/components/section-title'
 import ProjectCard from '@/components/project-card'
 import { Card } from "@/components/ui/card"
 import { FileDown, Mail, Github, Linkedin } from 'lucide-react';
-import face from '@/assets/face.jpeg'
-import planit from '@/assets/planit.png'
 import { ThemeProvider } from '@/components/theme-provider'
 import Navbar from '@/components/navbar'
 import { Separator } from "@/components/ui/separator"
 import Footer from '@/components/footer'
 import PostCard from "@/components/post-card"
+import AwardCard from "@/components/awards-card"
+
+/* Images */
+
+import face from '@/assets/face.jpeg'
+import planit from '@/assets/planit.jpg'
+import bellWinner from "@/assets/bell_winner.jpg"
+import vanierWinner from "@/assets/vanier_winner.jpg"
 
 
 
@@ -46,9 +52,9 @@ export default function Home() {
       const featuredProjects = [
         {
           "image": planit,
-          "title": "Tradingview Telegram Alerts",
+          "title": "PlanIt Mobile App",
           "description": "Real-time trading alerts with chart snapshots sent to Telegram, designed to keep traders informed and responsive to market changes",
-          "tags": ["Docker", "FastAPI", "Fly.io", "Python", "Selenium", "Telegram Bot API"],
+          "tags": ["Flutter", "Dart", "Firebase", "Places API", "Xcode"],
           "source": "https://github.com/tedawf/tradingview-telegram-alerts"
         },
         {
@@ -56,6 +62,19 @@ export default function Home() {
           "title": "Tradingview Telegram Alerts",
           "description": "Real-time trading alerts with chart snapshots sent to Telegram, designed to keep traders informed and responsive to market changes",
           "tags": ["Docker", "FastAPI", "Fly.io", "Python", "Selenium", "Telegram Bot API"],
+          "source": "https://github.com/tedawf/tradingview-telegram-alerts"
+        }
+      ];
+
+      const featuredAwards = [
+        {
+          "image": bellWinner,
+          "title": "2nd Place Hackathon Winner at Bell GeekFest",
+          "source": "https://github.com/tedawf/tradingview-telegram-alerts"
+        },
+        {
+          "image": vanierWinner,
+          "title": "Most Creative Project at Vanier College",
           "source": "https://github.com/tedawf/tradingview-telegram-alerts"
         }
       ];
@@ -148,6 +167,12 @@ export default function Home() {
     
             <div className='pt-18'>
               <SectionTitle title="featured awards" />
+
+              <div className='flex flex-row gap-x-4 justify-between max-sm:flex-col gap-y-4'>
+                {featuredAwards.map((project) => (
+                  <AwardCard project={project} />
+                ))}
+              </div>
             </div>
     
             {/* Recent Posts */}
