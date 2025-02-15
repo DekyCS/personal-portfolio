@@ -14,6 +14,7 @@ import { ThemeProvider } from '@/components/theme-provider'
 import Navbar from '@/components/navbar'
 import { Separator } from "@/components/ui/separator"
 import Footer from '@/components/footer'
+import PostCard from "@/components/post-card"
 
 
 
@@ -76,7 +77,7 @@ export default function Home() {
 
     return (
         <ThemeProvider defaultTheme="light">
-          <div className='flex flex-col max-w-3xl mx-auto text-lg px-8'>
+          <div className='min-h-screen flex flex-col max-w-3xl mx-auto text-lg px-8'>
     
             {/* Navbar */}
     
@@ -84,9 +85,9 @@ export default function Home() {
     
             {/* Heading */}
     
-            <div className='flex flex-row items-center justify-between gap-12 pt-8 max-md:flex-col-reverse max-md:items-start'>
+            <header className='flex flex-row items-center justify-between gap-12 pt-8 max-md:flex-col-reverse max-md:items-start'>
               <div className='flex flex-col gap-2'>
-                <h1 className='text-5xl calistoga-regular pb-4'>hi omar here 👋</h1>
+                <h1 className='text-5xl calistoga-regular pb-4 max-sm:text-[42px]'>hi omar here 👋</h1>
                 <p className='font-light'>19-year-old computer science student from Montreal 🇨🇦</p>
                 <p className='font-light pb-4'>I like to develop full stack websites, mobile applications and eat korean bbq</p>
                 <div className='flex flex-row gap-8 items-center'>
@@ -107,7 +108,7 @@ export default function Home() {
                   className='rounded-md object-cover w-full h-full'/>
                 </AspectRatio>
               </div>
-            </div>
+            </header>
     
             {/* Work / Education */}
     
@@ -155,21 +156,9 @@ export default function Home() {
               <SectionTitle title="recent posts" link="https://youtube.com" />
     
               <Card>
-                <div className='flex flex-row items-center justify-between p-6'>
-                  <div>
-                    <h1 className='text-lg font-semibold'>{recentPosts[0].title}</h1>
-                    <p className='text-sm opacity-60'>{recentPosts[0].description}</p>
-                  </div>
-                  <p className='text-sm whitespace-nowrap'>{recentPosts[0].date}</p>
-                </div>
+                <PostCard post={recentPosts[0]} />
                 <Separator />
-                <div className='flex flex-row items-center justify-between p-6'>
-                  <div>
-                    <h1 className='text-lg font-semibold'>{recentPosts[1].title}</h1>
-                    <p className='text-sm opacity-60'>{recentPosts[1].description}</p>
-                  </div>
-                  <p className='text-sm whitespace-nowrap'>{recentPosts[1].date}</p>
-                </div>
+                <PostCard post={recentPosts[1]} />
               </Card>
             </div>
     
