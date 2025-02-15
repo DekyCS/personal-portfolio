@@ -153,7 +153,7 @@ export default function Home() {
             {/* Featured Projects */}
     
             <div className='pt-18'>
-              <SectionTitle title="featured projects" link="https://youtube.com" />
+              <SectionTitle title="featured projects" link="/projects" />
               
               <div className='flex flex-row gap-x-4 justify-between max-sm:flex-col gap-y-4'>
                 {featuredProjects.map((project) => (
@@ -178,7 +178,7 @@ export default function Home() {
             {/* Recent Posts */}
     
             <div className='pt-18'>
-              <SectionTitle title="recent posts" link="https://youtube.com" />
+              <SectionTitle title="recent posts" link="/blog" />
     
               <Card>
                 <PostCard post={recentPosts[0]} />
