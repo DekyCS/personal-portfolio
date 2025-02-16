@@ -21,6 +21,7 @@ import face from '@/assets/face.jpeg'
 import planit from '@/assets/planit.jpg'
 import bellWinner from "@/assets/bell_winner.jpg"
 import vanierWinner from "@/assets/vanier_winner.jpg"
+import faceit from '@/assets/faceit.png'
 
 
 
@@ -53,16 +54,32 @@ export default function Home() {
         {
           "image": planit,
           "title": "PlanIt Mobile App",
-          "description": "Real-time trading alerts with chart snapshots sent to Telegram, designed to keep traders informed and responsive to market changes",
+          "description": "Smart group planning app that makes organizing hangouts easy by matching everyone's schedules and preferences, taking the hassle out of making plans",
           "tags": ["Flutter", "Dart", "Firebase", "Places API", "Xcode"],
-          "source": "https://github.com/tedawf/tradingview-telegram-alerts"
+          "imageLink": "https://github.com/SaidBecerra/planit",
+          "buttons": [
+            {
+              "type": "github",
+              "link": "https://github.com/SaidBecerra/planit"
+            },
+            {
+              "type": "testflight",
+              "link": "https://testflight.apple.com/join/5EPuyFGF"
+            }
+          ]
         },
         {
-          "image": planit,
-          "title": "Tradingview Telegram Alerts",
-          "description": "Real-time trading alerts with chart snapshots sent to Telegram, designed to keep traders informed and responsive to market changes",
-          "tags": ["Docker", "FastAPI", "Fly.io", "Python", "Selenium", "Telegram Bot API"],
-          "source": "https://github.com/tedawf/tradingview-telegram-alerts"
+          "image": faceit,
+          "title": "FaceIt",
+          "description": "\"Fake\" browser extension that merges facial recognition with autofill for secure, password-free logins, protecting your accounts even if your device is stolen",
+          "tags": ["Flask", "Python", "SQLite", "Face Recognition"],
+          "imageLink": "https://github.com/DekyCS/geekfest",
+          "buttons": [
+            {
+              "type": "github",
+              "link": "https://github.com/DekyCS/geekfest"
+            }
+          ]
         }
       ];
 
