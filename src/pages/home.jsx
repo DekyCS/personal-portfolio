@@ -22,7 +22,7 @@ import planit from '@/assets/planit.jpg'
 import bellWinner from "@/assets/bell_winner.jpg"
 import vanierWinner from "@/assets/vanier_winner.jpg"
 import faceit from '@/assets/faceit.png'
-
+import cv from '@/assets/omar_cv.pdf'
 
 
 export default function Home() {
@@ -127,8 +127,10 @@ export default function Home() {
                 <p className='font-light'>19-year-old computer science student from Montreal 🇨🇦</p>
                 <p className='font-light pb-4'>I like to develop full stack websites, mobile applications and eat korean bbq</p>
                 <div className='flex flex-row gap-8 items-center'>
-                  <Button variant="outline" className="cursor-pointer">
-                    Resume <FileDown />
+                  <Button variant="outline">
+                    <a href={cv} className="flex flex-row gap-2 items-center" target="_blank" rel="noopener noreferrer">
+                      Resume <FileDown />
+                    </a>
                   </Button>
                   
                   <IconButton Icon={Linkedin} link="https://www.linkedin.com/in/omar-lahlou-mimi-000988251/"></IconButton>
