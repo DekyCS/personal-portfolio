@@ -20,7 +20,8 @@ import AwardCard from "@/components/awards-card"
 import face from '@/assets/face.jpeg'
 import planit from '@/assets/planit.jpg'
 import bellWinner from "@/assets/bell_winner.jpg"
-import vanierWinner from "@/assets/vanier_winner.jpg"
+import vanierProjectWinner from "@/assets/vanierproject_winner.jpg"
+import vanierHacksWinner from "@/assets/vanierhacks-winner.jpg"
 import faceit from '@/assets/faceit.png'
 import cv from '@/assets/omar_cv.pdf'
 
@@ -90,7 +91,12 @@ export default function Home() {
           "source": "https://github.com/tedawf/tradingview-telegram-alerts"
         },
         {
-          "image": vanierWinner,
+          "image": vanierHacksWinner,
+          "title": "2nd Place CTF Hackathon Winner at VanierHacks CSSA",
+          "source": "https://github.com/tedawf/tradingview-telegram-alerts"
+        },
+        {
+          "image": vanierProjectWinner,
           "title": "Most Creative Project at Vanier College",
           "source": "https://github.com/tedawf/tradingview-telegram-alerts"
         }
@@ -98,17 +104,11 @@ export default function Home() {
       
       const recentPosts = [
         {
-          "title": "My Portfolio is Live: Here's What I Learned",
-          "description": "From a sleek, minimal dsign to an integrated Ai chatbot. It even got a live review from one of my favourite creators!",
-          "date": "September 27, 2024",
+          "title": "Blog is coming soon!",
+          "description": "I am still writing my blogs are the moment",
+          "date": "February 1, 2024",
           "source": ""
         },
-        {
-          "title": "My Portfolio is Live: Here's What I Learned",
-          "description": "From a sleek, minimal dsign to an integrated Ai chatbot. It even got a live review from one of my favourite creators!",
-          "date": "September 27, 2024",
-          "source": ""
-        }
       ];
 
     return (
@@ -187,7 +187,7 @@ export default function Home() {
             <div className='pt-18'>
               <SectionTitle title="featured awards" />
 
-              <div className='flex flex-row gap-x-4 justify-between max-sm:flex-col gap-y-4'>
+              <div className='flex flex-row flex-wrap gap-x-4 justify-between max-sm:flex-col gap-y-4'>
                 {featuredAwards.map((project) => (
                   <AwardCard project={project} />
                 ))}
@@ -201,8 +201,10 @@ export default function Home() {
     
               <Card>
                 <PostCard post={recentPosts[0]} />
+                {/* 
                 <Separator />
                 <PostCard post={recentPosts[1]} />
+                */}
               </Card>
             </div>
     

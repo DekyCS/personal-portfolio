@@ -11,7 +11,7 @@ import { BookOpen } from 'lucide-react';
 
 export default function AwardCard({ project }) {
     return (
-        <Card className='w-full'>
+        <Card className='w-31/64 max-sm:w-full'>
             <CardHeader>
                 <AspectRatio ratio={16/9}>
                     <img 
