@@ -27,13 +27,14 @@ import vanierProjectWinner from "@/assets/vanierproject_winner.jpg"
 import vanierHacksWinner from "@/assets/vanierhacks-winner.jpg"
 import faceit from '@/assets/faceit.png'
 import cv from '@/assets/omar_cv.pdf'
+import caeLogo from "@/assets/cae_logo.jpg"
 
 
 export default function Home() {
 
     const jobs = [
         {
-          "imgSource": "https://www.govconwire.com/wp-content/uploads/2022/07/unnamed-file-53.png",
+          "imgSource": caeLogo,
           "time": "Summer 2025",
           "company": "CAE",
           "title": "Research IVR integration specialist Intern",
