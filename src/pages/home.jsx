@@ -20,6 +20,9 @@ import AwardCard from "@/components/awards-card"
 import face from '@/assets/face.jpeg'
 import planit from '@/assets/planit.jpg'
 import bellWinner from "@/assets/bell_winner.jpg"
+import mariWinner from "@/assets/mari_winner.jpg"
+import jacWinner from "@/assets/jac_winner.jpg"
+import dawsWinner from "@/assets/daws_winner.jpg"
 import vanierProjectWinner from "@/assets/vanierproject_winner.jpg"
 import vanierHacksWinner from "@/assets/vanierhacks-winner.jpg"
 import faceit from '@/assets/faceit.png'
@@ -29,6 +32,15 @@ import cv from '@/assets/omar_cv.pdf'
 export default function Home() {
 
     const jobs = [
+        {
+          "imgSource": "https://www.govconwire.com/wp-content/uploads/2022/07/unnamed-file-53.png",
+          "time": "Summer 2025",
+          "company": "CAE",
+          "title": "Research IVR integration specialist Intern",
+          "descriptions": [
+            "Involves C++"
+          ]
+        },
         {
           "imgSource": "https://assets.grenier.qc.ca/cdn-cgi/image/q=90,format=webp,fit=pad,w=200,h=200/uploads/images/Logo-ITHQ-Marine-rgb-154839.png",
           "time": "Summer 2024",
@@ -85,6 +97,21 @@ export default function Home() {
       ];
 
       const featuredAwards = [
+        {
+          "image": dawsWinner,
+          "title": "1rst Place Hackathon Winner at DawsHacks",
+          "source": "https://github.com/tedawf/tradingview-telegram-alerts"
+        },
+        {
+          "image": jacWinner,
+          "title": "Security Challenge Winner at JacHacks",
+          "source": "https://github.com/tedawf/tradingview-telegram-alerts"
+        },
+        {
+          "image": mariWinner,
+          "title": "1rst Place Hackathon Winner at MariHacks",
+          "source": "https://github.com/tedawf/tradingview-telegram-alerts"
+        },
         {
           "image": bellWinner,
           "title": "2nd Place Hackathon Winner at Bell GeekFest",
@@ -158,7 +185,9 @@ export default function Home() {
                 </TabsList>
                 <TabsContent value="Work">
                   <Card className="flex flex-col gap-y-8 pt-4 pb-4 pl-6 pr-6">
-                    <PlaceInfo place={jobs[0]}/>
+                    {jobs.map((job, index) => (
+                      <PlaceInfo place={job}/>
+                    ))}
                   </Card>
                 </TabsContent>
                 <TabsContent value="Education">
