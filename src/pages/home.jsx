@@ -39,7 +39,8 @@ export default function Home() {
           "company": "CAE",
           "title": "Research IVR integration specialist Intern",
           "descriptions": [
-            "Involves C++"
+            "Implemented DevOps pipelines and CI/CD automation",
+            "Developed automated testing frameworks and scripts reduce manual testing"
           ]
         },
         {
@@ -161,7 +162,7 @@ export default function Home() {
                     </a>
                   </Button>
                   
-                  <IconButton Icon={Linkedin} link="https://www.linkedin.com/in/omar-lahlou-mimi-000988251/"></IconButton>
+                  <IconButton Icon={Linkedin} link="https://www.linkedin.com/in/omar-lahlou-mimi/"></IconButton>
                   <IconButton Icon={Github} link="https://github.com/DekyCS"></IconButton>
                   <IconButton Icon={Mail} link="mailto:omarlahmimi@gmail.com"></IconButton>
                 </div>
