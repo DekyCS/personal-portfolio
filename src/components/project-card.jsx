@@ -33,24 +33,24 @@ export default function ProjectCard({ project }) {
                     ))}
                 </div>
                 <div>
-                <div className="flex flex-wrap gap-2">
-                    {project.buttons.map((button) => (
-                        <Button className='mt-4 h-8 text-xs cursor-pointer'>
-                            {button.type === "github" ? (
-                                <a href={button.link} target="_blank" rel="noopener noreferrer" className="flex">
-                                    <Github className="mr-2" />
-                                    Source
-                                </a>
-                                ) : button.type === "testflight" ? (
+                    <div className="flex flex-wrap gap-2">
+                        {project.buttons.map((button) => (
+                            <Button className='mt-4 h-8 text-xs cursor-pointer'>
+                                {button.type === "github" ? (
                                     <a href={button.link} target="_blank" rel="noopener noreferrer" className="flex">
-                                    <FlaskConical className="mr-2" />
-                                    TestFlight
-                                </a>
-                                ) : null
-                            }
-                        </Button>
-                    ))}
-                </div>
+                                        <Github className="mr-2" />
+                                        Source
+                                    </a>
+                                    ) : button.type === "testflight" ? (
+                                        <a href={button.link} target="_blank" rel="noopener noreferrer" className="flex">
+                                        <FlaskConical className="mr-2" />
+                                        TestFlight
+                                    </a>
+                                    ) : null
+                                }
+                            </Button>
+                        ))}
+                    </div>
                 </div>
             </CardContent>
         </Card>
