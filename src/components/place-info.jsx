@@ -1,5 +1,7 @@
 import * as React from "react"
 import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar"
+import { Badge } from "@/components/ui/badge"
+import { Link } from "react-router-dom"
 
 export default function PlaceInfo({ place }) {
     return (
@@ -21,6 +23,13 @@ export default function PlaceInfo({ place }) {
                         <li className="max-w-lg" key={index}>{description}</li>
                     ))}
                 </ul>
+                <div className="flex flex-wrap gap-2">
+                    {place.links.map((link) => (
+                        <Badge>
+                            <Link to={link.link}>{link.name}</Link>
+                        </Badge
+                    ))}
+                </div>
             </div>
         </div>
     );
