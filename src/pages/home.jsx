@@ -61,7 +61,19 @@ export default function Home() {
           "time": "August 2023 - May 2026",
           "company": "John Abbott College CEGEP",
           "title": "Computer Science Technical Program",
-          "descriptions": []
+          "links": []
+        },
+        {
+          "imgSource": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/cc/Harvard_University_coat_of_arms.svg/1200px-Harvard_University_coat_of_arms.svg.png",
+          "time": "August 2022 - December 2022",
+          "company": "Harvard",
+          "title": "CS50 Introduction to Computer Science",
+          "links": [
+              {
+                  "name": "Certificate",
+                  "link": "https://certificates.cs50.io/2d193779-8997-47a6-a436-03631ec077b2.pdf?size=letter"
+              }
+          ]
         }
       ];
       
@@ -153,7 +165,7 @@ export default function Home() {
             <header className='flex flex-row items-center justify-between gap-12 pt-8 max-md:flex-col-reverse max-md:items-start'>
               <div className='flex flex-col gap-2'>
                 <h1 className='text-5xl calistoga-regular pb-4 max-sm:text-[42px]'>hi omar here 👋</h1>
-                <p className='font-light'>19-year-old computer science student from Montreal 🇨🇦</p>
+                <p className='font-light'>19yo computer science student from Montreal 🇨🇦</p>
                 <p className='font-light pb-4'>I like to develop full stack websites, mobile applications and eat korean bbq</p>
                 <div className='flex flex-row gap-8 items-center'>
                   <Button variant="outline">
