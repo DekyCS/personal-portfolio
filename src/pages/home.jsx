@@ -14,6 +14,7 @@ import { Separator } from "@/components/ui/separator"
 import Footer from '@/components/footer'
 import PostCard from "@/components/post-card"
 import AwardCard from "@/components/awards-card"
+import Title from "@/components/title"
 
 /* Images */
 
@@ -27,6 +28,7 @@ import vanierProjectWinner from "@/assets/vanierproject_winner.jpg"
 import vanierHacksWinner from "@/assets/vanierhacks-winner.jpg"
 import faceit from '@/assets/faceit.png'
 import cv from '@/assets/omar_cv.pdf'
+import bellCertificate from '@/assets/geekfest_winner.pdf';
 import caeLogo from "@/assets/cae_logo.jpg"
 
 
@@ -72,7 +74,7 @@ export default function Home() {
         {
           "imgSource": "https://catholicmontreal.ca/wp-content/uploads/cache/images/jac-t/jac-t-564307454.png",
           "time": "August 2023 - May 2026",
-          "company": "John Abbott College CEGEP",
+          "company": "John Abbott College",
           "title": "Computer Science Technical Program",
           "descriptions": [],
           "links": []
@@ -129,32 +131,62 @@ export default function Home() {
         {
           "image": dawsWinner,
           "title": "1rst Place Hackathon Winner at DawsHacks",
-          "source": "https://github.com/tedawf/tradingview-telegram-alerts"
+          "links": [
+            {
+              "name": "Devpost",
+              "link": "https://devpost.com/software/mofi"
+            }
+          ]
         },
         {
           "image": jacWinner,
           "title": "Security Challenge Winner at JacHacks",
-          "source": "https://github.com/tedawf/tradingview-telegram-alerts"
+          "links": [
+            {
+              "name": "Devpost",
+              "link": "https://devpost.com/software/devaura"
+            }
+          ]
         },
         {
           "image": mariWinner,
           "title": "1rst Place Hackathon Winner at MariHacks",
-          "source": "https://github.com/tedawf/tradingview-telegram-alerts"
+          "links": [
+            {
+              "name": "Devpost",
+              "link": "https://devpost.com/software/repocats"
+            }
+          ]
         },
         {
           "image": bellWinner,
           "title": "2nd Place Hackathon Winner at Bell GeekFest",
-          "source": "https://github.com/tedawf/tradingview-telegram-alerts"
+          "links": [
+            {
+              "name": "Certificate",
+              "link": bellCertificate
+            }
+          ]
         },
         {
           "image": vanierHacksWinner,
           "title": "2nd Place CTF Hackathon Winner at VanierHacks CSSA",
-          "source": "https://github.com/tedawf/tradingview-telegram-alerts"
+          "links": [
+            {
+              "name": "Blog",
+              "link": "https://www.vaniercollege.qc.ca/news/great-success-for-the-first-vanier-hacks"
+            }
+          ]
         },
         {
           "image": vanierProjectWinner,
           "title": "Most Creative Project at Vanier College",
-          "source": "https://github.com/tedawf/tradingview-telegram-alerts"
+          "links": [
+            {
+              "name": "Devpost",
+              "link": "https://devpost.com/software/planit-ly2qum"
+            }
+          ]
         }
       ];
       
@@ -179,7 +211,7 @@ export default function Home() {
     
             <header className='flex flex-row items-center justify-between gap-12 pt-8 max-md:flex-col-reverse max-md:items-start'>
               <div className='flex flex-col gap-2'>
-                <h1 className='text-5xl calistoga-regular pb-4 max-sm:text-[42px]'>hi omar here 👋</h1>
+                <Title title="hi omar here 👋"/>
                 <p className='font-light'>19yo computer science student from Montreal 🇨🇦</p>
                 <p className='font-light pb-4'>I like to develop full stack websites, mobile applications and eat korean bbq</p>
                 <div className='flex flex-row gap-8 items-center'>

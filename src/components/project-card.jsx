@@ -8,8 +8,8 @@ import {
   } from "@/components/ui/card"
 import { AspectRatio } from "@/components/ui/aspect-ratio"
 import { Badge } from "@/components/ui/badge"
-import { Button } from '@/components/ui/button'
-import { Github, FlaskConical } from 'lucide-react';
+import { Github, FlaskConical, Globe } from 'lucide-react';
+import { Link } from "react-router-dom"
 
 export default function ProjectCard({ project }) {
     return (
@@ -35,20 +35,32 @@ export default function ProjectCard({ project }) {
                 <div>
                     <div className="flex flex-wrap gap-2">
                         {project.buttons.map((button) => (
-                            <Button className='mt-4 h-8 text-xs cursor-pointer'>
+                            <Badge className='mt-4 py-1'>
                                 {button.type === "github" ? (
-                                    <a href={button.link} target="_blank" rel="noopener noreferrer" className="flex">
-                                        <Github className="mr-2" />
-                                        Source
-                                    </a>
+                                    <>
+                                        <Github className="mr-2" size={12}/>
+                                        <Link to={button.link} target="_blank">
+                                            GitHub
+                                        </Link>
+                                    </>
                                     ) : button.type === "testflight" ? (
-                                        <a href={button.link} target="_blank" rel="noopener noreferrer" className="flex">
-                                        <FlaskConical className="mr-2" />
-                                        TestFlight
-                                    </a>
+                                    <>
+                                        <FlaskConical className="mr-2" size={12}/>
+                                        <Link to={button.link} target="_blank">
+                                            TestFlight
+                                        </Link>
+                                    </>
+                                    ) : button.type === "website" ? (
+                                    <>
+                                        <Globe className="mr-2" size={12}/>
+                                        <Link to={button.link} target="_blank">
+                                            Website
+                                        </Link>
+                                    </>
                                     ) : null
                                 }
-                            </Button>
+                            </Badge>
+                            
                         ))}
                     </div>
                 </div>

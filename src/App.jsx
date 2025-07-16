@@ -4,7 +4,7 @@ import Home from './pages/home'
 import Projects from './pages/projects'
 import Blog from './pages/blog'
 import Contact from './pages/contact'
-import MakingPlanIt from './pages/blog/making-planit'
+import HelloWorld from './pages/blog/hello-world'
 
 function App() {
 
@@ -14,7 +14,7 @@ function App() {
         <Route path="/" element={<Home/>}/>
         <Route path="/projects" element={<Projects/>}/>
         <Route path="/blog" element={<Blog/>}/>
-        <Route path="/blog/making-planit" element={<MakingPlanIt />}/>
+        <Route path="/blog/hello-world" element={<HelloWorld />}/>
         <Route path="/contact" element={<Contact/>}/>
       </Routes>
     </Router>

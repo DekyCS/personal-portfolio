@@ -2,6 +2,7 @@ import * as React from "react"
 import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar"
 import { Badge } from "@/components/ui/badge"
 import { Link } from "react-router-dom"
+import { Globe } from 'lucide-react';
 
 export default function PlaceInfo({ place }) {
     return (
@@ -25,9 +26,12 @@ export default function PlaceInfo({ place }) {
                 </ul>
                 <div className="flex flex-wrap gap-2">
                     {place.links.map((link) => (
-                        <Badge>
-                            <Link to={link.link}>{link.name}</Link>
-                        </Badge
+                        <Badge className="mt-1">
+                            <Globe className="mr-2" size={12}/>
+                            <Link to={link.link} target="_blank">
+                                {link.name}
+                            </Link>
+                        </Badge>
                     ))}
                 </div>
             </div>

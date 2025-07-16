@@ -6,8 +6,10 @@ import {
     CardTitle,
   } from "@/components/ui/card"
 import { AspectRatio } from "@/components/ui/aspect-ratio"
-import { Button } from '@/components/ui/button'
-import { BookOpen } from 'lucide-react';
+import { Globe } from 'lucide-react'
+import { Link } from "react-router-dom"
+import { Badge } from "@/components/ui/badge"
+
 
 export default function AwardCard({ project }) {
     return (
@@ -22,9 +24,14 @@ export default function AwardCard({ project }) {
                 <CardTitle className='pt-4'>{project.title}</CardTitle>
             </CardHeader>
             <CardContent>
-                <Button className='w-26 h-8 text-xs cursor-pointer'>
-                    <BookOpen /> Read More
-                </Button>
+                {project.links.map((link) => (
+                    <Badge className='py-1'>
+                        <Globe className="mr-2" size={12}/>
+                        <Link to={link.link} target="_blank">
+                            {link.name}
+                        </Link>
+                    </Badge>
+                ))}
             </CardContent>
         </Card>
     );
