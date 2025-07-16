@@ -206,7 +206,9 @@ export default function Home() {
                 </TabsContent>
                 <TabsContent value="Education">
                   <Card className="flex flex-col gap-y-8 pt-4 pb-4 pl-8 pr-16">
-                    <PlaceInfo place={educations[0]}/>
+                    {educations.map((education, index) => (
+                      <PlaceInfo place={education}/>
+                    ))}
                   </Card>
                 </TabsContent>
               </Tabs>
