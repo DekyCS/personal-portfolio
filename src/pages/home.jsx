@@ -197,6 +197,12 @@ export default function Home() {
           "date": "February 1, 2024",
           "source": ""
         },
+        {
+          "title": "Blog is coming soon!",
+          "description": "I am still writing my blogs are the moment",
+          "date": "February 1, 2024",
+          "source": ""
+        }
       ];
 
     return (
@@ -293,10 +299,9 @@ export default function Home() {
     
               <Card>
                 <PostCard post={recentPosts[0]} />
-                {/* 
                 <Separator />
                 <PostCard post={recentPosts[1]} />
-                */}
+                
               </Card>
             </div>
     
