@@ -16,195 +16,19 @@ import PostCard from "@/components/post-card"
 import AwardCard from "@/components/awards-card"
 import Title from "@/components/title"
 
-/* Images */
+/* Assets */
 
-import face from '@/assets/face.jpeg'
-import planit from '@/assets/planit.jpg'
-import bellWinner from "@/assets/bell_winner.jpg"
-import mariWinner from "@/assets/mari_winner.jpg"
-import jacWinner from "@/assets/jac_winner.jpg"
-import dawsWinner from "@/assets/daws_winner.jpg"
-import vanierProjectWinner from "@/assets/vanierproject_winner.jpg"
-import vanierHacksWinner from "@/assets/vanierhacks-winner.jpg"
-import faceit from '@/assets/faceit.png'
 import cv from '@/assets/omar_cv.pdf'
-import bellCertificate from '@/assets/geekfest_winner.pdf';
-import caeLogo from "@/assets/cae_logo.jpg"
+import face from '@/assets/face.jpeg'
 
+/* Data */
+import { projects } from '@/data/projects'
+import { jobs } from '@/data/jobs'
+import { educations } from '@/data/educations'
+import { awards } from '@/data/awards'
+import { blogs } from '@/data/blogs'
 
 export default function Home() {
-
-    const jobs = [
-        {
-          "imgSource": "https://i.pinimg.com/564x/b1/f1/70/b1f170bfba5817dd84429e5b5ebbcc85.jpg",
-          "time": "August 2025 - Present",
-          "company": "Apple",
-          "title": "Specialist",
-          "descriptions": [
-            "Provided tailored product recommendations and support to enhance customer experience in a fast-paced retail environment",
-            "Collaborated with team members to maintain an inclusive, knowledgeable, and solution-oriented store atmosphere"
-          ],
-          "links": []
-        },
-        {
-          "imgSource": caeLogo,
-          "time": "Summer 2025",
-          "company": "CAE",
-          "title": "Research IVR integration specialist Intern",
-          "descriptions": [
-            "Implemented DevOps pipelines and CI/CD automation",
-            "Developed automated testing frameworks and scripts reduce manual testing"
-          ],
-          "links": []
-        },
-        {
-          "imgSource": "https://assets.grenier.qc.ca/cdn-cgi/image/q=90,format=webp,fit=pad,w=200,h=200/uploads/images/Logo-ITHQ-Marine-rgb-154839.png",
-          "time": "Summer 2024",
-          "company": "Institut de tourisme et d'hôtellerie du Québec",
-          "title": "Research Assistant (Intern)",
-          "descriptions": [
-            "Developed a Python desktop application with Tkinter for project organization and building a system to automatically sort and classify documents",
-            "Built web scraping solutions using BeautifulSoup and APIs to analyze pet policies across 100+ hotels, creating reports on industry standards"
-          ],
-          "links": []
-        }
-      ];
-      
-      const educations = [
-        {
-          "imgSource": "https://catholicmontreal.ca/wp-content/uploads/cache/images/jac-t/jac-t-564307454.png",
-          "time": "August 2023 - May 2026",
-          "company": "John Abbott College",
-          "title": "Computer Science Technical Program",
-          "descriptions": [],
-          "links": []
-        },
-        {
-          "imgSource": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/cc/Harvard_University_coat_of_arms.svg/1200px-Harvard_University_coat_of_arms.svg.png",
-          "time": "August 2022 - December 2022",
-          "company": "Harvard",
-          "title": "CS50 Introduction to Computer Science",
-          "descriptions": [],
-          "links": [
-              {
-                  "name": "Certificate",
-                  "link": "https://certificates.cs50.io/2d193779-8997-47a6-a436-03631ec077b2.pdf?size=letter"
-              }
-          ]
-        }
-      ];
-      
-      const featuredProjects = [
-        {
-          "image": planit,
-          "title": "PlanIt Mobile App",
-          "description": "Smart group planning app that makes organizing hangouts easy by matching everyone's schedules and preferences, taking the hassle out of making plans",
-          "tags": ["Flutter", "Dart", "Firebase", "Places API", "Xcode"],
-          "imageLink": "https://github.com/SaidBecerra/planit",
-          "buttons": [
-            {
-              "type": "github",
-              "link": "https://github.com/SaidBecerra/planit"
-            },
-            {
-              "type": "testflight",
-              "link": "https://testflight.apple.com/join/5EPuyFGF"
-            }
-          ]
-        },
-        {
-          "image": faceit,
-          "title": "FaceIt",
-          "description": "\"Fake\" browser extension that merges facial recognition with autofill for secure, password-free logins, protecting your accounts even if your device is stolen",
-          "tags": ["Flask", "Python", "SQLite", "Face Recognition"],
-          "imageLink": "https://github.com/DekyCS/geekfest",
-          "buttons": [
-            {
-              "type": "github",
-              "link": "https://github.com/DekyCS/geekfest"
-            }
-          ]
-        }
-      ];
-
-      const featuredAwards = [
-        {
-          "image": dawsWinner,
-          "title": "1rst Place Hackathon Winner at DawsHacks",
-          "links": [
-            {
-              "name": "Devpost",
-              "link": "https://devpost.com/software/mofi"
-            }
-          ]
-        },
-        {
-          "image": jacWinner,
-          "title": "Security Challenge Winner at JacHacks",
-          "links": [
-            {
-              "name": "Devpost",
-              "link": "https://devpost.com/software/devaura"
-            }
-          ]
-        },
-        {
-          "image": mariWinner,
-          "title": "1rst Place Hackathon Winner at MariHacks",
-          "links": [
-            {
-              "name": "Devpost",
-              "link": "https://devpost.com/software/repocats"
-            }
-          ]
-        },
-        {
-          "image": bellWinner,
-          "title": "2nd Place Hackathon Winner at Bell GeekFest",
-          "links": [
-            {
-              "name": "Certificate",
-              "link": bellCertificate
-            }
-          ]
-        },
-        {
-          "image": vanierHacksWinner,
-          "title": "2nd Place CTF Hackathon Winner at VanierHacks CSSA",
-          "links": [
-            {
-              "name": "Blog",
-              "link": "https://www.vaniercollege.qc.ca/news/great-success-for-the-first-vanier-hacks"
-            }
-          ]
-        },
-        {
-          "image": vanierProjectWinner,
-          "title": "Most Creative Project at Vanier College",
-          "links": [
-            {
-              "name": "Devpost",
-              "link": "https://devpost.com/software/planit-ly2qum"
-            }
-          ]
-        }
-      ];
-      
-      const recentPosts = [
-        {
-          "title": "Blog is coming soon!",
-          "description": "I am still writing my blogs are the moment",
-          "date": "February 1, 2024",
-          "source": ""
-        },
-        {
-          "title": "Blog is coming soon!",
-          "description": "I am still writing my blogs are the moment",
-          "date": "February 1, 2024",
-          "source": ""
-        }
-      ];
-
     return (
         <ThemeProvider defaultTheme="light">
           <div className='min-h-screen flex flex-col max-w-3xl mx-auto text-lg px-8'>
@@ -273,7 +97,7 @@ export default function Home() {
               <SectionTitle title="featured projects" link="/projects" />
               
               <div className='flex flex-row gap-x-4 justify-between max-sm:flex-col gap-y-4'>
-                {featuredProjects.map((project) => (
+                {projects.slice(0, 2).map((project) => (
                   <ProjectCard project={project} />
                 ))}
               </div>
@@ -286,7 +110,7 @@ export default function Home() {
               <SectionTitle title="featured awards" />
 
               <div className='flex flex-row flex-wrap gap-x-4 justify-between max-sm:flex-col gap-y-4'>
-                {featuredAwards.map((project) => (
+                {awards.map((project) => (
                   <AwardCard project={project} />
                 ))}
               </div>
@@ -298,10 +122,12 @@ export default function Home() {
               <SectionTitle title="recent posts" link="/blog" />
     
               <Card>
-                <PostCard post={recentPosts[0]} />
-                <Separator />
-                <PostCard post={recentPosts[1]} />
-                
+                {blogs.slice(0, 2).map((post, index) => (
+                    <>
+                        <PostCard post={post}/>
+                        {index < blogs.length - 1 && <Separator />}
+                    </>
+                ))}
               </Card>
             </div>
     

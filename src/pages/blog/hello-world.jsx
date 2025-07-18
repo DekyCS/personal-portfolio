@@ -4,6 +4,7 @@ import { ThemeProvider } from "@/components/theme-provider"
 import * as React from "react"
 import BackToBlog from "@/components/back-to-blog"
 import BlogTitle from "@/components/blog-title"
+import BlogSubTitle from "@/components/blog_subtitle"
 import Title from "@/components/title"
 import { AspectRatio } from "@/components/ui/aspect-ratio"
 
@@ -64,6 +65,51 @@ export default function HelloWorld() {
                     <p>
                         Creating my portfolio has been an incredible learning experience. When I was creating my portfolio, it was my first time using React! What started 
                         as a simple idea to showcase my projects has evolved into a comprehensive platform that represents who I am as a developer.
+                    </p>
+                </div>
+
+                <div>
+                    <BlogTitle title="Key Features I Built"/>
+
+                    <BlogSubTitle title="1. Clean, Professional Design"/>
+                    <p>
+                        I focused on creating a minimalistic yet professional interface that puts my work front and center. The goal was to make sure visitors could quickly 
+                        understand my skills and see my projects without any distractions.
+                    </p>
+
+                    <BlogSubTitle title="2. Mobile-First Approach" />
+                    <p>
+                        Being a developer in 2025, I knew mobile responsiveness wasn't optional. The entire site is designed to work seamlessly across all devices, ensuring 
+                        a great experience whether you're viewing it on your phone during your commute or on a desktop at work.
+                    </p>
+                </div>
+
+                <div>
+                    <BlogTitle title="What I Learned Along the Way"/>
+
+                    <BlogSubTitle title="Technical Growth"/>
+                    <p>
+                        Building this portfolio pushed me to refine my skills in modern web development. Since it was my first time using React, I experimented with new 
+                        frameworks, improved my design sense, and learned the importance of performance optimization.
+                    </p>
+
+                    <BlogSubTitle title="The Importance of Storytelling"/>
+                    <p>
+                        I realized that a portfolio isn't just about showing what you can build—it's about telling the story of who you are as a developer and what drives 
+                        your passion for technology.
+                    </p>
+
+                    <BlogSubTitle title="User Experience Matters"/>
+                    <p>
+                        Every decision, from the navigation structure to the color scheme, impacts how visitors perceive your work. I learned to think like a user, not 
+                        just a developer.
+                    </p>
+                </div>
+
+                <div>
+                    <BlogTitle title="What's Next?"/>
+                    <p>
+                        This blog will be my space to share insights, document my learning journey, and connect with the developer community. I plan to write about:
                     </p>
                 </div>
             </div>
