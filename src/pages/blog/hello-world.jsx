@@ -107,11 +107,24 @@ export default function HelloWorld() {
                 </div>
 
                 <div>
-                    <BlogTitle title="What's Next?"/>
+                    <BlogTitle title="Thanks for Reading!"/>
                     <p>
-                        This blog will be my space to share insights, document my learning journey, and connect with the developer community. I plan to write about:
+                        Thank you for taking the time to read my first blog post! I'm excited to share more of my journey with you. Whether you're a fellow developer, 
+                        a potential collaborator, or just someone interested in technology, I hope you'll find value in what I share here.
+                    </p>
+                    <p className="mt-4">
+                        Feel free to explore my portfolio, check out my projects, and don't hesitate to reach out if you'd like to connect. You can find me on LinkedIn or 
+                        through the contact form on my website.
+                    </p>
+                    <p className="mt-4">
+                        Here's to new beginnings and the journey ahead! 🚀
+                    </p>
+                    <p className="mt-4">
+                        – Omar
                     </p>
                 </div>
+
+
             </div>
 
             {/* Footer */}

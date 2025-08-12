@@ -1,20 +1,14 @@
 export const blogs = [
-        {
+    {
+        "title": "AdventureX: My First Hackathon in China",
+        "description": "This is my first post on my blog and a introduction of myself",
+        "date": "August 12th, 2025",
+        "source": "/blog/hackathon-china"
+    },
+    {
         "title": "Hello World!",
-        "description": "I am still writing my blogs are the moment",
-        "date": "July 17th, 2025",
+        "description": "This is my first post on my blog and a introduction of myself",
+        "date": "July 16th, 2025",
         "source": "/blog/hello-world"
     },
-    {
-        "title": "Blog is coming soon again!",
-        "description": "I am still writing my blogs are the moment",
-        "date": "February 2, 2024",
-        "source": ""
-    },
-    {
-        "title": "Blog is coming soon again!",
-        "description": "I am still writing my blogs are the moment",
-        "date": "February 2, 2024",
-        "source": ""
-    }
 ];
