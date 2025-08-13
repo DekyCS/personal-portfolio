@@ -4,13 +4,14 @@ import { ThemeProvider } from "@/components/theme-provider"
 import * as React from "react"
 import BackToBlog from "@/components/back-to-blog"
 import BlogTitle from "@/components/blog-title"
-import BlogSubTitle from "@/components/blog_subtitle"
 import Title from "@/components/title"
 import { AspectRatio } from "@/components/ui/aspect-ratio"
 
 /* Images */
 
-import face from '@/assets/face.jpeg'
+import chinaView from '@/assets/china-view.jpg'
+import visionPro from '@/assets/vision-pro.jpg'
+import chinaFriends from '@/assets/china-friends.jpg'
 
 export default function HackathonChina() {
     
@@ -29,9 +30,10 @@ export default function HackathonChina() {
             <div className="mb-12">
                 <AspectRatio ratio={16/9}>
                     <img 
-                    src={face}
-                    alt="Omar's photo"
-                    className='rounded-md object-cover w-full h-full'/>
+                    src={chinaView}
+                    alt="Omar's photo in China"
+                    className='rounded-md object-cover w-full h-full'
+                    style={{ objectPosition: 'center 85%' }}/>
                 </AspectRatio>
             </div>
 
@@ -72,6 +74,16 @@ export default function HackathonChina() {
                         But perhaps the most impressive sight was the robot dogs casually roaming the space, a reminder that we weren’t just coding websites here, we were 
                         in a place where the future was being built with servos and sensors as much as with syntax and algorithms.
                     </p>
+
+                    <div className="mt-4">
+                        <AspectRatio ratio={16/12}>
+                            <img 
+                            src={visionPro}
+                            alt="Omar wearing a Apple Vision Pro"
+                            className='rounded-md object-cover w-full h-full'
+                            style={{ objectPosition: 'center 15%' }}/>
+                        </AspectRatio>
+                    </div>
                 </div>
 
                 <div>
@@ -88,6 +100,15 @@ export default function HackathonChina() {
                     <p className="mt-4">
                         Each conversation felt like a masterclass in thinking bigger and more globally about technology’s role in solving real problems.
                     </p>
+
+                    <div className="mt-4">
+                        <AspectRatio ratio={16/9}>
+                            <img 
+                            src={chinaFriends}
+                            alt="Omar eating lunch with friends in China"
+                            className='rounded-md object-cover w-full h-full'/>
+                        </AspectRatio>
+                    </div>
                 </div>
 
                 <div>

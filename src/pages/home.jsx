@@ -19,7 +19,7 @@ import Title from "@/components/title"
 /* Assets */
 
 import cv from '@/assets/omar_cv.pdf'
-import face from '@/assets/face.jpeg'
+import face from '@/assets/omar-profile.jpg'
 
 /* Data */
 import { projects } from '@/data/projects'
@@ -57,7 +57,7 @@ export default function Home() {
                 </div>
               </div>
               <div className='flex-shrink-0 w-44'>
-                <AspectRatio ratio={1}>
+                <AspectRatio ratio={12/16}>
                   <img 
                   src={face}
                   alt="Omar's photo"
