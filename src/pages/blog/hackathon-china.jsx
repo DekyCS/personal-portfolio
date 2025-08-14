@@ -125,7 +125,7 @@ export default function HackathonChina() {
                     </p>
 
                     <div className="mt-4">
-                        <AspectRatio ratio={16/1}>
+                        <AspectRatio ratio={16/11}>
                             <img 
                             src={chongqing}
                             alt="Chongqing city view"
