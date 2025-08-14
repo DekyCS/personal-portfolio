@@ -12,6 +12,7 @@ import { AspectRatio } from "@/components/ui/aspect-ratio"
 import chinaView from '@/assets/china-view.jpg'
 import visionPro from '@/assets/vision-pro.jpg'
 import chinaFriends from '@/assets/china-friends.jpg'
+import chongqing from '@/assets/chongqing.jpg'
 
 export default function HackathonChina() {
     
@@ -122,12 +123,22 @@ export default function HackathonChina() {
                         skyline. The ancient beauty of Zhangjiajie’s Tianmen Mountains provided a peaceful counterpoint to the urban intensity, while Furong Ancient Town’s traditional architecture 
                         and cascading waterfall felt like stepping into a different era entirely.
                     </p>
+
+                    <div className="mt-4">
+                        <AspectRatio ratio={16/1}>
+                            <img 
+                            src={chongqing}
+                            alt="Chongqing city view"
+                            className='rounded-md object-cover w-full h-full'
+                            style={{ objectPosition: 'center 65%' }}/>
+                        </AspectRatio>
+                    </div>
                 </div>
 
                 <div>
                     <BlogTitle title="The WeChat Revelation"/>
                     <p>
-                        Perhaps the most eye-opening discovery wasn’t hardware or code – it was WeChat. This single app seamlessly integrated ride-hailing (called Didi), food delivery, payments, 
+                        Perhaps the most eye-opening discovery wasn’t hardware or code: it was WeChat. This single app seamlessly integrated ride-hailing (called Didi), food delivery, payments, 
                         social networking, and countless other services. As someone from Canada, where we juggle multiple apps for basic daily tasks, I was amazed by this unified ecosystem.
                     </p>
                     <p className="mt-4">
