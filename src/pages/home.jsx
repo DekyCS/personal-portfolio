@@ -39,7 +39,7 @@ export default function Home() {
     
             {/* Heading */}
     
-            <header className='flex flex-row items-center justify-between gap-32 pt-8 max-md:flex-col-reverse max-md:items-start'>
+            <header className='flex flex-row items-center justify-between gap-32 pt-8 max-md:flex-col-reverse max-md:items-start max-md:gap-8'>
               <div className='flex flex-col gap-2'>
                 <Title title="hi omar here. 👋"/>
                 <p className='font-medium text-base'>19yo computer science student from Montreal 🇨🇦</p>
