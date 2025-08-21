@@ -7,8 +7,8 @@ export const jobs = [
         "company": "Apple",
         "title": "Specialist",
         "descriptions": [
-        "Provided tailored product recommendations and support to enhance customer experience in a fast-paced retail environment",
-        "Collaborated with team members to maintain an inclusive, knowledgeable, and solution-oriented store atmosphere"
+        "Deliver personalized customer experiences by understanding technical needs and providing tailored Apple ecosystem solutions",
+        "Build brand loyalty through consultative selling approach, demonstrating empathy and problem-solving skills in fast-paced retail environment"
         ],
         "links": []
     },
@@ -18,8 +18,9 @@ export const jobs = [
         "company": "CAE",
         "title": "Research IVR integration specialist Intern",
         "descriptions": [
-        "Implemented DevOps pipelines and CI/CD automation",
-        "Developed automated testing frameworks and scripts reduce manual testing"
+        "Optimized CI/CD pipelines using Build Orchestrator, automating 20+ hours of manual work weekly through intelligent build triggers",
+        "Implemented automated asset versioning system ensuring synchronized builds across multiple training simulation products",
+        "Enhanced deployment efficiency by 75% through streamlined build processes and automated testing integration"
         ],
         "links": []
     },
@@ -29,8 +30,9 @@ export const jobs = [
         "company": "Institut de tourisme et d'hôtellerie du Québec",
         "title": "Research Assistant (Intern)",
         "descriptions": [
-        "Developed a Python desktop application with Tkinter for project organization and building a system to automatically sort and classify documents",
-        "Built web scraping solutions using BeautifulSoup and APIs to analyze pet policies across 100+ hotels, creating reports on industry standards"
+        "Developed Python desktop application with TKinter for automated government document classification, reducing manual processing time by 80%",
+        "Built web scraping solution analyzing pet policies across 100+ hotels, saving approximately 40 hours of manual research weekly",
+        "Implemented Monday.com integration platform enabling seamless data sharing and automated report generation for annual compliance documentation"
         ],
         "links": []
     }

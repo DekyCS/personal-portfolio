@@ -21,7 +21,7 @@ export default function PlaceInfo({ place }) {
                 <p className="text-base opacity-50">{place.title}</p>
                 <ul className="list-disc pl-4 text-base opacity-75">
                     {place.descriptions.map((description, index) => (
-                        <li className="max-w-lg" key={index}>{description}</li>
+                        <li className="max-w-lg text-[15px]" key={index}>{description}</li>
                     ))}
                 </ul>
                 <div className="flex flex-wrap gap-2">

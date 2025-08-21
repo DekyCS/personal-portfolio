@@ -1,8 +1,26 @@
 import planit from '@/assets/planit.jpg'
 import faceit from '@/assets/faceit.png'
 import repocats from '@/assets/repocats.jpg'
+import visocode from '@/assets/visocode.png'
 
 export const projects = [
+    {
+        "image": visocode,
+        "title": "VisoCode",
+        "description": "AI-powered engine that transforms questions into animated educational videos using a multi-agent pipeline with research and code generation capabilities.",
+        "tags": ["Python", "AI Agents", "Manim", "LaTeX", "Kimi-K2", "Gemini"],
+        "imageLink": "https://visocode.vercel.app",
+        "buttons": [
+            {
+                "type": "github",
+                "link": "https://github.com/adventurex-hackathon/"
+            },
+            {
+                "type": "website",
+                "link": "https://visocode.vercel.app"
+            }
+        ]
+    },
     {
         "image": repocats,
         "title": "Repocats",
