@@ -2,6 +2,16 @@ import caeLogo from "@/assets/cae_logo.jpg"
 
 export const jobs = [
     {
+        "imgSource": caeLogo,
+        "time": "Winter 2025",
+        "company": "CAE",
+        "title": "Software Developer Intern",
+        "descriptions": [
+        "Software Development"
+        ],
+        "links": []
+    },
+    {
         "imgSource": "https://i.pinimg.com/564x/b1/f1/70/b1f170bfba5817dd84429e5b5ebbcc85.jpg",
         "time": "August 2025 - Present",
         "company": "Apple",
@@ -16,7 +26,7 @@ export const jobs = [
         "imgSource": caeLogo,
         "time": "Summer 2025",
         "company": "CAE",
-        "title": "Research IVR integration specialist Intern",
+        "title": "Integration Specialist Intern",
         "descriptions": [
         "Optimized CI/CD pipelines using Build Orchestrator, automating 20+ hours of manual work weekly through intelligent build triggers",
         "Implemented automated asset versioning system ensuring synchronized builds across multiple training simulation products",
