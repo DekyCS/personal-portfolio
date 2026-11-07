@@ -7,7 +7,7 @@ export default function Footer() {
     return (
         <footer className="pt-18 pb-32 flex justify-between items-center max-sm:flex-col-reverse gap-y-8 mt-auto">
           <p className="text-gray-400 text-xs">
-              © 2025 <a className="hover:text-gray-700" href="https://omarlahloumimi.com">omarlahloumimi.com</a>
+              © 2026 <a className="hover:text-gray-700" href="https://omarlahloumimi.com">omarlahloumimi.com</a>
           </p>
           <div className='flex flex-row gap-8'>
             <IconButton Icon={Linkedin} size={18} link="https://www.linkedin.com/in/omar-lahlou-mimi/"></IconButton>

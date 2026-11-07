@@ -8,7 +8,7 @@ import {
   } from "@/components/ui/card"
 import { AspectRatio } from "@/components/ui/aspect-ratio"
 import { Badge } from "@/components/ui/badge"
-import { Github, FlaskConical, Globe } from 'lucide-react';
+import { Github, FlaskConical, Globe, Smartphone } from 'lucide-react';
 import { Link } from "react-router-dom"
 
 export default function ProjectCard({ project }) {
@@ -48,6 +48,13 @@ export default function ProjectCard({ project }) {
                                         <FlaskConical className="mr-2" size={12}/>
                                         <Link to={button.link} target="_blank">
                                             TestFlight
+                                        </Link>
+                                    </>
+                                    ) : button.type === "appstore" ? (
+                                    <>
+                                        <Smartphone className="mr-2" size={12}/>
+                                        <Link to={button.link} target="_blank">
+                                            App Store
                                         </Link>
                                     </>
                                     ) : button.type === "website" ? (
