@@ -6,7 +6,7 @@ import {
     CardTitle,
   } from "@/components/ui/card"
 import { AspectRatio } from "@/components/ui/aspect-ratio"
-import { Globe } from 'lucide-react'
+import { Globe, Github, Youtube } from 'lucide-react'
 import { Link } from "react-router-dom"
 import { Badge } from "@/components/ui/badge"
 
@@ -23,15 +23,18 @@ export default function AwardCard({ project }) {
                 </AspectRatio>
                 <CardTitle className='pt-4'>{project.title}</CardTitle>
             </CardHeader>
-            <CardContent>
-                {project.links.map((link) => (
-                    <Badge className='py-1'>
-                        <Globe className="mr-2" size={12}/>
+            <CardContent className='flex flex-wrap gap-2'>
+                {project.links.map((link) => {
+                    const Icon = link.name === "Video" ? Youtube : link.name === "GitHub" ? Github : Globe
+                    return (
+                    <Badge className='py-1' key={link.name}>
+                        <Icon className="mr-2" size={12}/>
                         <Link to={link.link} target="_blank">
                             {link.name}
                         </Link>
                     </Badge>
-                ))}
+                    )
+                })}
             </CardContent>
         </Card>
     );

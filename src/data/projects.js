@@ -2,8 +2,40 @@ import planit from '@/assets/planit.jpg'
 import faceit from '@/assets/faceit.png'
 import repocats from '@/assets/repocats.jpg'
 import visocode from '@/assets/visocode.png'
+import prova from '@/assets/prova.png'
+import plotbreak from '@/assets/plotbreak.jpg'
 
 export const projects = [
+    {
+        "image": prova,
+        "title": "Prova",
+        "description": "Startup funding data API covering 265,000+ companies. Served 420,000+ lookups in its first month, including 64,000+ paid lookups, making $8K in revenue.",
+        "tags": ["TypeScript", "Python", "Supabase", "API"],
+        "imageLink": "https://www.provaapi.com",
+        "buttons": [
+            {
+                "type": "website",
+                "link": "https://www.provaapi.com"
+            }
+        ]
+    },
+    {
+        "image": plotbreak,
+        "title": "Plotbreak: The Playable Anime",
+        "description": "Native iOS game with an AI story engine, live on the App Store. Reached 1,000+ accounts, 9,000+ AI story turns and 60+ in-app purchases within 8 weeks of launch, with a peak of 105 DAU.",
+        "tags": ["SwiftUI", "Postgres", "Supabase", "PostHog"],
+        "imageLink": "https://apps.apple.com/us/app/plotbreak-the-playable-anime/id6811307049",
+        "buttons": [
+            {
+                "type": "appstore",
+                "link": "https://apps.apple.com/us/app/plotbreak-the-playable-anime/id6811307049"
+            },
+            {
+                "type": "website",
+                "link": "https://plotbreak.com"
+            }
+        ]
+    },
     {
         "image": visocode,
         "title": "VisoCode",

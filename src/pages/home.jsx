@@ -42,8 +42,8 @@ export default function Home() {
             <header className='flex flex-row items-center justify-between gap-32 pt-8 max-md:flex-col-reverse max-md:items-start max-md:gap-8'>
               <div className='flex flex-col gap-2'>
                 <Title title="hi omar here. 👋"/>
-                <p className='font-medium text-base'>19yo computer science student from Montreal 🇨🇦</p>
-                <p className='pb-4 text-base'>I like to develop full stack websites, mobile applications and eat korean bbq</p>
+                <p className='font-medium text-base'>20yo computer science student from Montreal 🇨🇦</p>
+                <p className='pb-4 text-base'>I build full stack apps, iOS apps and AI products, and eat korean bbq</p>
                 <div className='flex flex-row gap-6 items-center'>
                   <Button variant="outline">
                     <a href={cv} className="flex flex-row gap-2 items-center font-medium" target="_blank" rel="noopener noreferrer">
